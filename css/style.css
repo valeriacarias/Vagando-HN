@@ -52,8 +52,6 @@ header {
 }
 
 #members img {
-  width: 200px;
-  height: 200px;
   border-radius: 50%;
 }
 
@@ -86,6 +84,7 @@ header {
   margin: 0;
   padding: 0;
   text-align: justify;
+	margin-right: 50px;
 }
 
 #main {
@@ -303,6 +302,25 @@ h2 {
   font-weight: 700;
   text-transform: uppercase;
 }
+h4{
+	text-align: left;
+	text-transform: uppercase;
+	color: var(--color-verde);
+	letter-spacing: 5px;
+	font-weight: 800;
+	font-size: 18px;
+}
+h5{
+	text-align: left;
+	text-transform: none;
+	color: var(--color-grisclaro);
+	font-weight: 200;
+	font-size: 18px;
+}
+.detalle p{
+	text-transform: lowercase !important;
+	text-align: left;
+}
 
 .team {
   color: #b77b4e;
@@ -326,6 +344,11 @@ footer {
   padding: 50px;
   text-align: center;
   align-content: center;
+}
+a{
+	color: var(--color-verde);
+	text-decoration: none;
+	font-weight: 800;
 }
 
 
