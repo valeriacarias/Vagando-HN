@@ -19,22 +19,6 @@ header {
   border-bottom: 5px;
 }
 
-/*Modifies wrapper of image and text*/
-.team-member {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: flex-start;
-  width: 400px;
-}
-.team-member {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: flex-start;
-  width: 400px;
-}
-
 /*Modifies images of team members*/
 .team-member img {
   width: 100px;
@@ -44,39 +28,14 @@ header {
   margin-bottom: 40px;
 }
 
-#members {
-  position: relative;
+#members, #members-2 {
   width: 60%;
   background-color: #fff;
-  margin: 0px 0px 200px 250px;
+	margin: 30px 0px;
 }
 
 #members img {
   border-radius: 50%;
-}
-
-/*Align members so they can fit in each corner*/
-#members .container {
-  position: relative;
-}
-#members article {
-  position: absolute;
-}
-#members article:nth-child(1) {
-  top: 0;
-  left: 0;
-}
-#members article:nth-child(2) {
-  top: 0;
-  right: 0;
-}
-#members article:nth-child(3) {
-  bottom: 0;
-  left: 0;
-}
-#members article:nth-child(4) {
-  bottom: 0;
-  right: 0;
 }
 
 /*Modifies text of team members*/
@@ -104,8 +63,7 @@ header {
 }
 
 #about-us {
-  align-content: center;
-
+  align-content: right;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -114,10 +72,6 @@ header {
 
 #text1 {
   padding-top: 100px;
-}
-
-#form {
-  display: inline-flex;
 }
 
 #topbar {
@@ -317,21 +271,15 @@ h5{
 	font-weight: 200;
 	font-size: 18px;
 }
-.detalle p{
-	text-transform: lowercase !important;
-	text-align: left;
-}
-
 .team {
   color: #b77b4e;
-  font-size: 40px;
-  margin: 50px 0px 20px 0px;
-  font-weight: 700;
+  font-size: 50px;
+  margin: 40px 0px 40px 0px;
+  font-weight: 500;
   text-transform: uppercase;
-  align-content: center;
   text-align: center;
+	letter-spacing: 5px;
 }
-
 .center p {
   text-transform: uppercase;
   padding: 5px;
@@ -350,3 +298,5 @@ a{
 	text-decoration: none;
 	font-weight: 800;
 }
+
+
