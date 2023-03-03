@@ -48,7 +48,7 @@ header {
   position: relative;
   width: 60%;
   background-color: #fff;
-  margin: 250px 0px 200px 200px;
+  margin: 0px 0px 200px 250px;
 }
 
 #members img {
@@ -350,5 +350,3 @@ a{
 	text-decoration: none;
 	font-weight: 800;
 }
-
-
