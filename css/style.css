@@ -1,11 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+@font-face {      
+font-family: "LASVALLESTexturedRound";      
+src: url('../fonts/LASVALLESTexturedRounded.ttf')   
+}
 
 :root {
   --color-verde: #2d4236;
   --color-cafe: #b77b4e;
   --color-gris: #464646;
   --color-grisclaro: #787780;
+	--color-beige: #fcf2da;
 }
 
 body {
@@ -63,11 +68,13 @@ header {
 }
 
 #about-us {
-  align-content: right;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 100%;
+  background-color:var(--color-beige);
+}
+#about-us p{
+  font-size: 18px; 
+	text-align: center;
+	padding: 0 5% 2% 5%; 
+	font-weight: 500; 
 }
 
 #text1 {
@@ -241,6 +248,13 @@ select {
   background-color: var(--color-cafe);
 }
 
+h1{
+	font-family: "LASVALLESTexturedRound"; 
+	color: var(--color-verde);
+	text-align: center;
+	font-size: 2500%;
+	margin-bottom: 0;
+}
 h3 {
   color: #b77b4e;
   font-size: 25px;
