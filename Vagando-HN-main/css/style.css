@@ -1,0 +1,349 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+@font-face {      
+font-family: "LASVALLESTexturedRound";      
+src: url('../fonts/LASVALLESTexturedRounded.ttf')   
+}
+
+:root {
+  --color-verde: #2d4236;
+  --color-cafe: #b77b4e;
+  --color-gris: #464646;
+  --color-grisclaro: #787780;
+	--color-beige: #fcf2da;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  color: var(--color-gris);
+}
+
+header {
+  padding: 0px;
+  border-bottom: 5px;
+}
+
+
+/*Modifies images of team members*/
+.team-member img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-right: 20px;
+  margin-bottom: 40px;
+}
+
+#members, #members-2 {
+  width: 60%;
+  background-color: #fff;
+	margin: 30px 0px;
+}
+
+#members img {
+  border-radius: 50%;
+}
+
+/*Modifies text of team members*/
+.team-detail {
+  margin: 0;
+  padding: 0;
+  text-align: justify;
+	margin-right: 50px;
+}
+
+#main {
+  padding: 110px 0;
+  align-content: center;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0),
+      rgba(255, 255, 255, 1)
+    ),
+    url('../img/catarranas-honduras.jpeg');
+  background-color: #cc5600;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#about-us {
+  background-color:var(--color-beige);
+}
+#about-us p{
+  font-size: 18px;
+  text-align: center;
+  padding: 0 5% 2% 5%; 
+  font-weight: 500; 
+}
+
+#text1 {
+  padding-top: 100px;
+}
+
+#topbar {
+  background-color: var(--color-cafe);
+  color: var(--color-cafe);
+  width: 100%;
+  height: 20px;
+  border-top: 0;
+}
+
+.navbar-nav .nav-link.btn-primary {
+  background-color: #ffffff;
+  color: var(--color-grisclaro) !important;
+  font-weight: 600px !important;
+  border: 0;
+  padding: 10px 20px;
+  border-radius: 2px;
+}
+.navbar-nav .nav-link.btn-primary:hover {
+  background-color: var(--color-hover-menu);
+  color: #ffffff !important;
+}
+
+.custom-active .nav-link {
+  position: relative;
+}
+
+/*Makes the green bar appear below navbar, make sure to place: <li class="nav-item custom-active"> to indicate which page is the active*/
+.custom-active .nav-link:after {
+  content: '';
+  display: block;
+  height: 4px;
+  background-color: green;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+#logo {
+  object-fit: contain;
+  object-position: left;
+}
+
+#links {
+  text-align: start;
+}
+
+#links a {
+  display: inline;
+  padding: 15px;
+  color: black;
+  text-decoration: none;
+}
+
+.center {
+  padding-top: 20px;
+  align-content: center;
+  text-align: center;
+}
+
+.relative {
+  position: relative;
+}
+
+.footernav {
+  display: inline;
+  list-style-type: none;
+  padding: 25px;
+  border-width: 10px;
+}
+
+li {
+  display: inherit;
+  padding: inherit;
+}
+
+#form form input,
+select {
+  height: 75px;
+  width: 225px;
+}
+
+#form {
+  border-inline: 15px hidden;
+  margin-inline: 14%;
+}
+
+.footertext {
+  border-width: 10px;
+}
+
+#locations {
+  padding: 250px 0;
+  background-color: #fff;
+  align-content: center;
+  text-align: center;
+  padding-top: 50px;
+}
+#locations .img-fluid {
+  height: 250px;
+}
+
+#locations .col-md-6 {
+  min-width: 500px;
+}
+
+#locations img {
+  height: 400px;
+  width: 600px;
+  border-radius: 10px;
+}
+
+#galeria {
+  padding: 75px 0;
+  background-color: #fff;
+  align-content: center;
+  text-align: center;
+  padding-top: 50px;
+}
+#btn-section {
+  background-color: #fff;
+  align-content: center;
+  text-align: center;
+}
+#galeria .img-fluid {
+  height: 250px;
+}
+
+#galeria .col-md-6 {
+  min-width: 500px;
+}
+
+#galeria img {
+  height: 400px;
+  width: 600px;
+  border-radius: 10px;
+  margin-bottom: 25px;
+}
+.btn-galeria {
+  color: #fff;
+  background-color: var(--color-verde);
+  text-decoration: none;
+  padding: 20px 50px;
+  margin-top: 100px;
+  border-radius: 40px;
+  align-content: center;
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.btn-home {
+  color: #fff;
+  background-color: var(--color-verde);
+  text-decoration: none;
+  padding: 20px 50px;
+  margin-top: 100px;
+  border-radius: 40px;
+  align-content: center;
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.btn-galeria:hover,
+.btn-home:hover {
+  background-color: var(--color-cafe);
+}
+
+h1{
+	font-family: "LASVALLESTexturedRound"; 
+	color: var(--color-verde);
+	text-align: center;
+	font-size: 250px;
+	margin-bottom: 0;
+}
+h3 {
+  color: #b77b4e;
+  font-size: 25px;
+  margin: 0px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+h2 {
+  color: #2d4236;
+  font-size: 40px;
+  margin: 0px 0px 20px 0px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+h4{
+	text-align: left;
+	text-transform: uppercase;
+	color: var(--color-verde);
+	letter-spacing: 5px;
+	font-weight: 800;
+	font-size: 18px;
+}
+h5{
+	text-align: left;
+	text-transform: none;
+	color: var(--color-grisclaro);
+	font-weight: 200;
+	font-size: 18px;
+}
+.team {
+  color: #b77b4e;
+  font-size: 50px;
+  margin: 40px 0px 40px 0px;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-align: center;
+	letter-spacing: 5px;
+}
+.center p {
+  text-transform: uppercase;
+  padding: 5px;
+}
+footer {
+  text-transform: none;
+  background-color: #fff;
+  color: #787780;
+  font-style: bold;
+  padding: 50px;
+  text-align: center;
+  align-content: center;
+}
+a{
+	color: var(--color-verde);
+	text-decoration: none;
+	font-weight: 800;
+}
+
+#testimonios {
+  background-color:var(--color-beige);
+}
+
+#testimonios p{
+   font-size: 18px; 
+   text-align: center !important; 
+   padding: 0 5% 2% 5%; 
+   font-weight: 500;
+}
+
+#customer img {
+    border-radius: 60%;
+	margin-top: 40px;
+	
+}
+
+#customer h4{
+	margin-top: 60px;
+	margin-left: 10px;
+	font-size: 18px;	
+}
+#customer p{
+    font-size: 16px; 
+    text-align: left !important;
+	margin-left: 10px;
+}
+#customer h5{
+    font-size: 11px; 
+    text-align: left !important;
+	margin-left: 10px;
+	margin-top: 20px;
+}
