@@ -1,19 +1,31 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
-@font-face {      
-font-family: "LASVALLESTexturedRound";      
-src: url('../fonts/LASVALLESTexturedRounded.ttf')   
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+
+@font-face {
+  font-family: "LasValles";
+  src: url("../fonts/LASVALLESTexturedRegular.ttf") format("truetype");
 }
 
-:root {
-  --color-verde: #2d4236;
-  --color-cafe: #b77b4e;
-  --color-gris: #464646;
-  --color-grisclaro: #787780;
-	--color-beige: #fcf2da;
+@font-face {
+  font-family: "DMSans";
+  src: url("../fonts/DMSans-Regular.ttf") format("truetype");
 }
 
-body {
+@font-face {
+  font-family: lasvallestextured;
+  src: url("../fonts/LASVALLESTexturedRounded.ttf") format("truetype");
+}
+
+:root{
+	--color-body: #323232;
+	--color-azul: #071F54;
+	--color-azulclaro: #03A7E0;
+	--color-rojo: #EE0D0C;
+	--color-amarillo: #F8BE07;
+	--color-verde: #1EAF25;
+}
+
+body { 
   font-family: 'Open Sans', sans-serif;
   font-size: 14px;
   color: var(--color-gris);
@@ -24,228 +36,119 @@ header {
   border-bottom: 5px;
 }
 
-/*Modifies images of team members*/
-.team-member img {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  margin-right: 20px;
-  margin-bottom: 40px;
+#heronoticias{ 
+padding-bottom: 3%;
+background-color: beige;
 }
 
-#members, #members-2 {
-  width: 60%;
-  background-color: #fff;
-	margin: 30px 0px;
-}
-
-#members img {
-  border-radius: 50%;
-}
-
-/*Modifies text of team members*/
-.team-detail {
-  margin: 0;
-  padding: 0;
-  text-align: justify;
-	margin-right: 50px;
-}
-
-#main {
-  padding: 110px 0;
-  align-content: center;
-  background-image: linear-gradient(
-      to bottom,
-      rgba(255, 255, 255, 0),
-      rgba(255, 255, 255, 1)
-    ),
-    url('../img/catarranas-honduras.jpeg');
-  background-color: #cc5600;
-
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-#about-us {
-  background-color:var(--color-beige);
-}
-#about-us p{
-  font-size: 18px; 
+.titulos{
 	text-align: center;
-	padding: 0 5% 2% 5%; 
-	font-weight: 500; 
+	font-size: 280px;
+	font-family:lasvallestextured;
+	color: #242424;
+	padding-bottom: 0px;
+	font-weight: 500;
 }
 
-#text1 {
-  padding-top: 100px;
+#heronoticias h5{
+	text-align: center;
+	font-size: 20px;
+	font-family: 'Open Sans', sans-serif;
+	letter-spacing: 4px;
 }
 
-#topbar {
-  background-color: var(--color-cafe);
-  color: var(--color-cafe);
-  width: 100%;
-  height: 20px;
-  border-top: 0;
+#cards{
+	padding-top: 5%;
+	padding-bottom: 5%;
 }
 
-.navbar-nav .nav-link.btn-primary {
-  background-color: #ffffff;
-  color: var(--color-grisclaro) !important;
-  font-weight: 600px !important;
-  border: 0;
-  padding: 10px 20px;
-  border-radius: 2px;
-}
-.navbar-nav .nav-link.btn-primary:hover {
-  background-color: var(--color-hover-menu);
-  color: #ffffff !important;
+#cards h6{
+	padding-bottom: 2%;
+	padding-top: 4%;
+	color: darkgrey;
+	font-size: 14px;
 }
 
-.custom-active .nav-link {
-  position: relative;
+.card{
+	background-color: #fff ;
+	border: 0px;
+	box-shadow: 0px 0px 30px 0px #ddd;
+	margin-right: 0%;
+	margin-left: 0%;
+	align-content: center;
+	padding: 0%;
 }
 
-/*Makes the green bar appear below navbar, make sure to place: <li class="nav-item custom-active"> to indicate which page is the active*/
-.custom-active .nav-link:after {
-  content: '';
-  display: block;
-  height: 4px;
-  background-color: green;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
+.card-title{
+	letter-spacing: 2%;
+	padding-bottom: 2%;
+	font-size: 20px;
+	color: #000;
+	font-weight: 700;
 }
 
-#logo {
-  object-fit: contain;
-  object-position: left;
+.card-body{
+	text-align: left;
+	font-size: 13px;
 }
 
-#links {
-  text-align: start;
+
+
+.btn-primary:hover{
+	background-color: #fff;
+	color: #C15107;
+	border: none;
 }
 
-#links a {
-  display: inline;
-  padding: 15px;
-  color: black;
-  text-decoration: none;
+.btn-primary{
+	background-color: #C15107;
+	color: #fff;
+	border: none;
 }
 
-.center {
-  padding-top: 20px;
-  align-content: center;
-  text-align: center;
+.la-envelope{ 
+font-size: 25px;
+border: medium #C15107;
+color: #C15107;
+margin-bottom: 2%;
+margin-right: 3%;
 }
 
-.relative {
-  position: relative;
+.la-map-marker{ 
+font-size: 25px;
+font-weight: 900px;
+color: #C15107;
+margin-bottom: 2%;
+margin-right: 3%;
 }
 
-.footernav {
-  display: inline;
-  list-style-type: none;
-  padding: 25px;
-  border-width: 10px;
+
+#form .form-info{
+	background-color: #fff;
+	padding:0% 5% 4% 5%;
+	text-align: center;
+	
 }
 
-li {
-  display: inherit;
-  padding: inherit;
+#form input, 
+#form textarea{
+	padding: 15px;
+	border-radius: 0;
+	background-color: #fbfbfb;
+	border:0;
 }
 
-#form form input,
-select {
-  height: 75px;
-  width: 225px;
+#form .btn{
+	margin-left: 25%;
+	text-align: center;
+	background-color: #C87937;
+	color: #fff;
+	font-weight: 700;
 }
 
-#form {
-  border-inline: 15px hidden;
-  margin-inline: 14%;
-}
-
-.footertext {
-  border-width: 10px;
-}
-
-#locations {
-  padding: 250px 0;
-  background-color: #fff;
-  align-content: center;
-  text-align: center;
-  padding-top: 50px;
-}
-#locations .img-fluid {
-  height: 250px;
-}
-
-#locations .col-md-6 {
-  min-width: 500px;
-}
-
-#locations img {
-  height: 400px;
-  width: 600px;
-  border-radius: 10px;
-}
-
-#galeria {
-  padding: 75px 0;
-  background-color: #fff;
-  align-content: center;
-  text-align: center;
-  padding-top: 50px;
-}
-#btn-section {
-  background-color: #fff;
-  align-content: center;
-  text-align: center;
-}
-#galeria .img-fluid {
-  height: 250px;
-}
-
-#galeria .col-md-6 {
-  min-width: 500px;
-}
-
-#galeria img {
-  height: 400px;
-  width: 600px;
-  border-radius: 10px;
-  margin-bottom: 25px;
-}
-.btn-galeria {
-  color: #fff;
-  background-color: var(--color-verde);
-  text-decoration: none;
-  padding: 20px 50px;
-  margin-top: 100px;
-  border-radius: 40px;
-  align-content: center;
-  font-size: 20px;
-  font-weight: 700;
-  text-transform: uppercase;
-}
-
-.btn-home {
-  color: #fff;
-  background-color: var(--color-verde);
-  text-decoration: none;
-  padding: 20px 50px;
-  margin-top: 100px;
-  border-radius: 40px;
-  align-content: center;
-  font-size: 20px;
-  font-weight: 700;
-  text-transform: uppercase;
-}
-.btn-galeria:hover,
-.btn-home:hover {
-  background-color: var(--color-cafe);
+#form{
+	padding-bottom: 5%;
+	padding-top: 5%;
 }
 
 h1{
@@ -285,261 +188,30 @@ h5{
 	font-weight: 200;
 	font-size: 18px;
 }
-.team {
-  color: #b77b4e;
-  font-size: 50px;
-  margin: 40px 0px 40px 0px;
-  font-weight: 500;
-  text-transform: uppercase;
-  text-align: center;
-	letter-spacing: 5px;
-}
-.center p {
-  text-transform: uppercase;
-  padding: 5px;
-}
-footer {
-  text-transform: none;
-  background-color: #fff;
-  color: #787780;
-  font-style: bold;
-  padding: 50px;
-  text-align: center;
-  align-content: center;
-}
-a{
-	color: var(--color-verde);
-	text-decoration: none;
-	font-weight: 800;
-}
 
-
-.parent {
-  position: relative;
-  top: 0;
-  left: 0;
-}
-
-#certificate .img-fluid {
-  position: relative;
-  top: 0;
-  left: 0;
-  border: 1px solid #000000;
-  object-fit: cover;
-  width:100%;
-  height:100%;
-
-	
-}
-
-.app-carousel {
-    padding: 0 6%;
-}
-.app-carousel .center .single-shot {
-    opacity: 1;
-    transform: scale(1);
-}
-.app-carousel .single-shot {
-    opacity: 0.8;
-    transform: scale(0.8);
-}
-
-.app-carousel .owl-dots {
-    text-align: center;
-}
-.app-carousel .owl-dot {
-    height: 11px;
-    width: 11px;
-    border: none !important;
-   
-    margin: 35px 6px;
-}
-.app-carousel .owl-dot.active {
-    background-color: #fb397d;
-    border: 0 !important;
-}
-.card-info{
-	position: absolute;
-	bottom: 0;
-	background-color: #000;
-	width: 100%;
-	text-align: center;
-	padding: 10px 0;
-}
-.card-info h4{
-	color: var( --color-verde);
-}
-
-.card-info h5{
-	color: var( --color-grisclaro);
-}
-
-.card .position-relative{
-	overflow: hidden;
-}
-#guides .img-fluid{
-	 position: relative;
-  top: 0;
-  left: 0;
-  border:none;
-  object-fit: cover;
-  width:100%;
-  height:100%;
-}
-#guides{
-	background-color: var(--color-verde);
-	padding: 7%;
-}	
-.btn-more{
-	color:#b77b4e;
-	
-}
-#guides h5{
-	margin-top: 30px;
-}
-#guides.card-body{
-	border-radius: 20px !important;
-}
-
-#cars{
-	background-color: var(--color-verde);
-	padding: 9%;
-}
-#cars h5{
-	margin-top: 30px;
-}
-
-.search {
+#topbar {
+  background-color: var(--color-cafe);
+  color: var(--color-cafe);
   width: 100%;
-  position: relative;
-  display: flex;
+  height: 20px;
+  border-top: 0;
 }
 
-.searchTerm {
-  width: 100%;
-  border: 3px solid #2d4236;
-  border-right: none;
-  padding: 5px;
-  height: 60px;
-  border-radius: 5px 0 0 5px;
-  outline: none;
-  color: #9DBFAF;
+.navbar-nav .nav-link.btn-primary {
+  background-color: #ffffff;
+  color: var(--color-grisclaro) !important;
+  font-weight: 600px !important;
+  border: 0;
+  padding: 10px 20px;
+  border-radius: 2px;
+}
+.navbar-nav .nav-link.btn-primary:hover {
+  background-color: var(--color-hover-menu);
+  color: #ffffff !important;
 }
 
-.searchTerm:focus{
-  color: #00B4CC;
-}
-
-.searchButton {
-  width: 40px;
-  height: 60px;
-  border: 1px solid #2d4236;
-  background: #2d4236;
-  text-align: center;
-  color: #fff;
-  border-radius: 0 5px 5px 0;
-  cursor: pointer;
-  font-size: 16px;
-}
-
-/*Resize the wrap to see the search bar change!*/
-.wrap{
-  width: 50%;
-	height: 50px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-#categorias {
-	padding: 50px;
-	justify-content: center;
-	align-content: center;
-	text-align: center;
-}
-
-#categorias i{
-	padding: 20px;
-	border-radius: 50%;
-	font-size: 48px;
-	color: #FFFFFF;
-	background-color: #b77b4e;
-	margin: 8px;
-	align-content: center;
-	justify-content: center;
-	text-align: center;
-}
-
-#restaurantes {
-	padding: 100px;
-	align-content: center;
-	justify-content: center;
-	text-align: center;
-}
-.cards {
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  transition: 0.3s;
-  border-radius: 5px; /* 5px rounded corners */
-}
-
-/* Add rounded corners to the top left and the top right corner of the image */
-.cards img {
-  border-radius: 5px 5px 0 0;
-	max-width: 300px;
-	height: 270px;
-	width: cover;
-}
-
-
-/* On mouse-over, add a deeper shadow */
-.cards:hover {
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-}
-
-/* Galería de Imágenes Lugares */
-
-.gallery-wrap {
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-  height: 70vh;
-}
-
-.item {
-  flex: 1;
-  height: 100%;
-  background-position: center;
-  background-size: cover;
-  background-repeat: none;
-  transition: flex 0.8s ease;
-  &:hover{
-    flex: 7;
-  }
-}
-
-.item-1 { 
-  background-image: url("../img/restaurante_1.webp");
-}
-
-.item-2 { 
-  background-image: url("../img/restaurante_2.jpg");
-}
-
-.item-3 { 
-  background-image: url("../img/restaurante_3.jpg");
-}
-
-.item-4 { 
-  background-image: url("../img/restaurante_4.jpg");
-}
-
-.item-5 { 
-  background-image: url("../img/resturante_5.jpg");
-}
-
-#head-picture {
-	padding: 110px 0;
+#main {
+  padding: 110px 0;
   align-content: center;
   background-image: linear-gradient(
       to bottom,
@@ -552,10 +224,20 @@ a{
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-	
 }
 
-#head-picture img{
-	width: 500px;
+#topbar {
+  background-color: var(--color-cafe);
+  color: var(--color-cafe);
+  width: 100%;
+  height: 20px;
+  border-top: 0;
 }
+
+a{
+	color: var(--color-verde);
+	text-decoration: none;
+	font-weight: 800;
+}
+
 
